@@ -15,8 +15,8 @@ export const ProductImage = ({
     return (
       <img
         className={`${styles.productImg} ${className}`}
-        src={img || product.img || noImage}
-        alt={alt || product.title || "image"}
+        src={img || product?.img || noImage}
+        alt={alt || product?.title || "image"}
       />
     );
   };
